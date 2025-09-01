@@ -1,5 +1,5 @@
 import React from 'react';
-import { Car, Mail, Phone, MapPin } from 'lucide-react';
+import { Car, Mail, Phone, MapPin, MessageCircle, Facebook, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -16,14 +16,32 @@ const Footer = () => {
               de produits automobiles et de peinture de qualité supérieure.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">
-                <i className="fab fa-facebook-f"></i>
+              <a 
+                href="https://wa.me/15817775787" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-green-400 transition-colors p-2 rounded-full hover:bg-green-400/10"
+                title="WhatsApp"
+              >
+                <MessageCircle className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">
-                <i className="fab fa-linkedin-in"></i>
+              <a 
+                href="https://facebook.com/aldiinternationaltrading" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-blue-400 transition-colors p-2 rounded-full hover:bg-blue-400/10"
+                title="Facebook"
+              >
+                <Facebook className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">
-                <i className="fab fa-twitter"></i>
+              <a 
+                href="https://linkedin.com/company/aldi-international-trading" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-blue-500 transition-colors p-2 rounded-full hover:bg-blue-500/10"
+                title="LinkedIn"
+              >
+                <Linkedin className="w-6 h-6" />
               </a>
             </div>
           </div>
