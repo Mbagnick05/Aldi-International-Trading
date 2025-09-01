@@ -13,23 +13,44 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Construire l'URL Gmail avec les données du formulaire
+    // Construire l'URL Gmail avec toutes les données du formulaire
     const emailTo = 'diagnealiou787@gmail.com';
-    const subject = encodeURIComponent(formData.subject || 'Contact depuis le site ALDI International Trading');
+    
+    // Créer le sujet basé sur la sélection
+    let subjectText = '';
+    switch(formData.subject) {
+      case 'vehicle-export':
+        subjectText = 'Demande d\'exportation de véhicules';
+        break;
+      case 'paint-supplies':
+        subjectText = 'Demande de fournitures de peinture';
+        break;
+      case 'quote':
+        subjectText = 'Demande de devis';
+        break;
+      case 'other':
+        subjectText = 'Autre demande';
+        break;
+      default:
+        subjectText = 'Contact depuis le site ALDI International Trading';
+    }
+    
+    const subject = encodeURIComponent(subjectText);
     const body = encodeURIComponent(
       `Nom: ${formData.name}\n` +
       `Email: ${formData.email}\n` +
-      `Téléphone: ${formData.phone}\n\n` +
+      `Téléphone: ${formData.phone || 'Non renseigné'}\n` +
+      `Sujet: ${subjectText}\n\n` +
       `Message:\n${formData.message}`
     );
     
-    // Construire l'URL Gmail
+    // Construire l'URL Gmail complète
     const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailTo}&su=${subject}&body=${body}`;
     
     // Ouvrir Gmail dans un nouvel onglet
     window.open(gmailUrl, '_blank');
     
-    // Réinitialiser le formulaire après ouverture de Gmail
+    // Réinitialiser le formulaire
     setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
   };
 
