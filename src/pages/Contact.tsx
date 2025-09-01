@@ -12,7 +12,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Les messages seront envoyés à : admin@aldiinternationaltrading.com
+    // Les messages seront envoyés à : diagnealiou787@gmail.com
     console.log('Form submitted:', formData);
     alert('Message envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.');
     setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
