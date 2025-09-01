@@ -8,6 +8,7 @@ import VehicleDetail from './pages/VehicleDetail';
 import Supplies from './pages/Supplies';
 import SupplyDetail from './pages/SupplyDetail';
 import Contact from './pages/Contact';
+import About from './pages/About';
 import AdminLogin from './pages/admin/AdminLogin';
 import AdminDashboard from './pages/admin/AdminDashboard';
 import AdminVehicles from './pages/admin/AdminVehicles';
@@ -26,6 +27,7 @@ function App() {
             <Route path="/supplies" element={<Supplies />} />
             <Route path="/supplies/:id" element={<SupplyDetail />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
             <Route path="/admin" element={<AdminLogin />} />
             <Route path="/admin/dashboard" element={<AdminDashboard />} />
             <Route path="/admin/vehicles" element={<AdminVehicles />} />

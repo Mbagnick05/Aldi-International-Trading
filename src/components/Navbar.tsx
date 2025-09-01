@@ -44,6 +44,12 @@ const Navbar = () => {
               Contact
             </Link>
             <Link 
+              to="/about" 
+              className={`hover:text-blue-400 transition-colors ${isActive('/about') ? 'text-blue-400' : ''}`}
+            >
+              À propos
+            </Link>
+            <Link 
               to="/admin" 
               className={`hover:text-blue-400 transition-colors ${isActive('/admin') ? 'text-blue-400' : ''}`}
             >
@@ -93,6 +99,13 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Contact
+              </Link>
+              <Link 
+                to="/about" 
+                className={`block px-3 py-2 rounded-md hover:bg-slate-700 transition-colors ${isActive('/about') ? 'bg-slate-700 text-blue-400' : ''}`}
+                onClick={() => setIsOpen(false)}
+              >
+                À propos
               </Link>
               <Link 
                 to="/admin" 
