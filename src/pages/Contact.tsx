@@ -13,10 +13,10 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Construire l'URL Gmail avec toutes les données du formulaire
+    // Construire l'URL Gmail avec formatage optimisé
     const emailTo = 'diagnealiou787@gmail.com';
     
-    // Créer le sujet basé sur la sélection
+    // Créer le sujet en français basé sur la sélection
     let subjectText = '';
     switch(formData.subject) {
       case 'vehicle-export':
@@ -37,21 +37,25 @@ const Contact = () => {
     
     const subject = encodeURIComponent(subjectText);
     const body = encodeURIComponent(
-      `Nom: ${formData.name}\n` +
-      `Email: ${formData.email}\n` +
-      `Téléphone: ${formData.phone || 'Non renseigné'}\n` +
-      `Sujet: ${subjectText}\n\n` +
-      `Message:\n${formData.message}`
+      `Bonjour,\n\n` +
+      `Voici les détails de ma demande :\n\n` +
+      `• Nom complet : ${formData.name}\n` +
+      `• Email : ${formData.email}\n` +
+      `• Téléphone : ${formData.phone || 'Non renseigné'}\n` +
+      `• Type de demande : ${subjectText}\n\n` +
+      `Message :\n${formData.message}\n\n` +
+      `Cordialement,\n${formData.name}`
     );
     
-    // Construire l'URL Gmail complète
+    // Ouvrir Gmail avec le message pré-rempli
     const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailTo}&su=${subject}&body=${body}`;
-    
-    // Ouvrir Gmail dans un nouvel onglet
     window.open(gmailUrl, '_blank');
     
-    // Réinitialiser le formulaire
+    // Réinitialiser le formulaire après redirection
     setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+    
+    // Message de confirmation
+    alert('Redirection vers Gmail en cours... Votre message est prêt à être envoyé !');
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
