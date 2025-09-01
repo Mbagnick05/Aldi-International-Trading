@@ -12,9 +12,24 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Les messages seront envoyés à : diagnealiou787@gmail.com
-    console.log('Form submitted:', formData);
-    alert('Message envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.');
+    
+    // Construire l'URL Gmail avec les données du formulaire
+    const emailTo = 'diagnealiou787@gmail.com';
+    const subject = encodeURIComponent(formData.subject || 'Contact depuis le site ALDI International Trading');
+    const body = encodeURIComponent(
+      `Nom: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Téléphone: ${formData.phone}\n\n` +
+      `Message:\n${formData.message}`
+    );
+    
+    // Construire l'URL Gmail
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailTo}&su=${subject}&body=${body}`;
+    
+    // Ouvrir Gmail dans un nouvel onglet
+    window.open(gmailUrl, '_blank');
+    
+    // Réinitialiser le formulaire après ouverture de Gmail
     setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
   };
 
