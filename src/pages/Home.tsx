@@ -11,7 +11,7 @@ const Home = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop)'
+            backgroundImage: "url(/src/assets/accueil.jpg)"
           }}
         ></div>
         
@@ -50,7 +50,7 @@ const Home = () => {
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Spécialisés dans l'exportation de véhicules et la distribution de fournitures 
                 automobiles et de peinture, nous servons une clientèle internationale exigeante 
-                depuis notre base au Québec.
+                depuis notre base au Canada.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="flex items-center space-x-3">
@@ -75,7 +75,7 @@ const Home = () => {
             </div>
             <div>
               <img 
-                src="https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                src="/src/assets/aldi.jpg" 
                 alt="ALDI International Trading" 
                 className="rounded-lg shadow-xl w-full h-96 object-cover"
               />

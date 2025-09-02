@@ -26,7 +26,7 @@ const Footer = () => {
                 <MessageCircle className="w-6 h-6" />
               </a>
               <a 
-                href="https://facebook.com/aldiinternationaltrading" 
+                href="#" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-blue-400 transition-colors p-2 rounded-full hover:bg-blue-400/10"
@@ -35,7 +35,7 @@ const Footer = () => {
                 <Facebook className="w-6 h-6" />
               </a>
               <a 
-                href="https://linkedin.com/company/aldi-international-trading" 
+                href="#" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-blue-500 transition-colors p-2 rounded-full hover:bg-blue-500/10"
@@ -61,7 +61,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-blue-400" />
-                <span className="text-gray-300">contact@aldiinternationaltrading.com</span>
+                <span className="text-gray-300">contact@aldiinternational.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-blue-400" />

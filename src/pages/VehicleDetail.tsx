@@ -13,14 +13,14 @@ const VehicleDetail = () => {
       model: 'Camry',
       year: 2023,
       images: [
-        'https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=800',
-        'https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=800'
+        '/src/assets/toyota1.jpg',
+        '/src/assets/toyota2.jpg'
       ],
-      mileage: '15,000 km',
+      mileage: '10,000 km',
       fuel: 'Essence',
       transmission: 'Automatique',
       engine: '2.5L 4-cylindres',
-      color: 'Blanc Perle',
+      color: 'Blanc',
       doors: 4,
       seats: 5,
       description: 'Toyota Camry 2023 en excellent état, parfaite pour l\'exportation. Véhicule bien entretenu avec historique complet. Idéal pour les marchés internationaux. Cette berline offre un parfait équilibre entre confort, fiabilité et économie de carburant.',
@@ -35,54 +35,54 @@ const VehicleDetail = () => {
     },
     '2': {
       id: 2,
-      brand: 'Honda',
-      model: 'Civic',
-      year: 2022,
+      brand: 'Madza',
+      model: 'CX5',
+      year: 2020,
       images: [
-        'https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=800',
-        'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=800'
+        '/src/assets/madza1.jpg',
+        '/src/assets/madza2.jpg'
       ],
-      mileage: '25,000 km',
+      mileage: '15,000 km',
       fuel: 'Essence',
-      transmission: 'Manuelle',
-      engine: '2.0L 4-cylindres',
-      color: 'Gris Métallique',
+      transmission: 'Automatique',
+      engine: '4L 2.5 l',
+      color: 'Bleu',
       doors: 4,
       seats: 5,
-      description: 'Honda Civic 2022 sportive et économique. Parfaite pour les jeunes conducteurs et l\'exportation vers les marchés émergents. Transmission manuelle pour une conduite engageante et une consommation optimisée.',
+      description: 'Le Mazda CX-5 2020 est un VUS compact réputé pour sa fiabilité, sa sécurité et son agrément de conduite.',
       specifications: {
         'Moteur': '2.0L 4-cylindres',
-        'Puissance': '158 ch',
-        'Couple': '187 Nm',
-        'Consommation': '6.9L/100km',
-        'Réservoir': '47 litres',
-        'Poids': '1,330 kg'
+        'Puissance': '139 KW',
+        'Couple': '252 Nm',
+        'Consommation': '8.8L/100km',
+        'Réservoir': '56 litres',
+        'Poids': '1 497 kg'
       }
     },
     '3': {
       id: 3,
-      brand: 'BMW',
-      model: 'X5',
-      year: 2023,
+      brand: 'Jeep',
+      model: 'Cherokee Sport',
+      year: 2019,
       images: [
-        'https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=800',
-        'https://images.pexels.com/photos/1719648/pexels-photo-1719648.jpeg?auto=compress&cs=tinysrgb&w=800'
+        '/src/assets/jeep1.jpg',
+        '/src/assets/jeep2.jpg'
       ],
-      mileage: '8,000 km',
-      fuel: 'Diesel',
+      mileage: '35,000 km',
+      fuel: 'Essence',
       transmission: 'Automatique',
-      engine: '3.0L 6-cylindres Diesel',
-      color: 'Noir Saphir',
-      doors: 5,
-      seats: 7,
-      description: 'BMW X5 2023 de luxe avec moteur diesel performant. SUV premium parfait pour l\'exportation vers les marchés haut de gamme. Intérieur cuir, technologie avancée et performances exceptionnelles.',
+      engine: '2.4L 4-cylindres ',
+      color: 'Noir Blanc',
+      doors: 4,
+      seats: 5,
+      description: 'Le Jeep Cherokee Sport 2019 est un VUS moyen doté de nombreuses améliorations, dont un nouveau moteur 4 cylindres turbo de 2.4 L',
       specifications: {
-        'Moteur': '3.0L 6-cylindres Diesel',
-        'Puissance': '265 ch',
-        'Couple': '620 Nm',
-        'Consommation': '8.2L/100km',
-        'Réservoir': '83 litres',
-        'Poids': '2,135 kg'
+        'Moteur': '4L 2.4 l',
+        'Puissance': '180 hp 6 400',
+        'Couple': '232 Nm',
+        'Consommation': '7.6L/100km',
+        'Réservoir': '60 litres',
+        'Poids': '1800 kg'
       }
     },
     '4': {
@@ -91,14 +91,14 @@ const VehicleDetail = () => {
       model: 'C-Class',
       year: 2022,
       images: [
-        'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=800',
-        'https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=800'
+        '/src/assets/mercedes1.jpg',
+        '/src/assets/mercedes2.jpg'
       ],
       mileage: '20,000 km',
       fuel: 'Essence',
       transmission: 'Automatique',
       engine: '2.0L 4-cylindres Turbo',
-      color: 'Argent Iridium',
+      color: 'Noir',
       doors: 4,
       seats: 5,
       description: 'Mercedes C-Class 2022 élégante et raffinée. Berline de luxe allemande avec finitions premium. Parfaite pour l\'exportation vers les marchés exigeants recherchant le prestige et la qualité Mercedes-Benz.',
@@ -117,14 +117,14 @@ const VehicleDetail = () => {
       model: 'A4',
       year: 2023,
       images: [
-        'https://images.pexels.com/photos/1719648/pexels-photo-1719648.jpeg?auto=compress&cs=tinysrgb&w=800',
-        'https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=800'
+        '/src/assets/audi1.jpg',
+        '/src/assets/audi2.jpg'
       ],
-      mileage: '12,000 km',
+      mileage: '5,000 km',
       fuel: 'Essence',
       transmission: 'Automatique',
       engine: '2.0L TFSI',
-      color: 'Bleu Navarra',
+      color: 'Noir',
       doors: 4,
       seats: 5,
       description: 'Audi A4 2023 avec technologie Quattro. Berline sportive allemande alliant performance et élégance. Design moderne et intérieur technologique. Excellente pour l\'exportation vers les marchés premium.',
@@ -143,15 +143,15 @@ const VehicleDetail = () => {
       model: 'Sportage',
       year: 2022,
       images: [
-        'https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=800',
-        'https://images.pexels.com/photos/1335077/pexels-photo-1335077.jpeg?auto=compress&cs=tinysrgb&w=800'
+        '/src/assets/kia1.jpg',
+        '/src/assets/kia2.jpg'
       ],
-      mileage: '18,000 km',
+      mileage: '25,000 km',
       fuel: 'Essence',
       transmission: 'Automatique',
       engine: '2.4L 4-cylindres',
-      color: 'Rouge Passion',
-      doors: 5,
+      color: 'Rouge',
+      doors: 4,
       seats: 5,
       description: 'KIA Sportage 2022 SUV compact moderne avec excellent rapport qualité-prix. Design attractif et garantie étendue. Idéal pour l\'exportation vers les marchés recherchant la fiabilité et l\'économie.',
       specifications: {
@@ -169,14 +169,14 @@ const VehicleDetail = () => {
       model: 'Altima',
       year: 2023,
       images: [
-        'https://images.pexels.com/photos/1719648/pexels-photo-1719648.jpeg?auto=compress&cs=tinysrgb&w=800',
-        'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=800'
+        '/src/assets/nissan2.jpg',
+        '/src/assets/nissan1.jpg'
       ],
-      mileage: '22,000 km',
+      mileage: '30,000 km',
       fuel: 'Essence',
       transmission: 'CVT',
       engine: '2.5L 4-cylindres',
-      color: 'Blanc Perle',
+      color: 'Gris',
       doors: 4,
       seats: 5,
       description: 'Nissan Altima 2023 berline familiale spacieuse et confortable. Transmission CVT pour une conduite douce et économique. Parfaite pour l\'exportation vers les marchés familiaux.',
@@ -195,15 +195,15 @@ const VehicleDetail = () => {
       model: 'Outback',
       year: 2023,
       images: [
-        'https://images.pexels.com/photos/1335077/pexels-photo-1335077.jpeg?auto=compress&cs=tinysrgb&w=800',
-        'https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=800'
+        '/src/assets/subaru1.jpg',
+        '/src/assets/subaru2.jpg'
       ],
-      mileage: '14,000 km',
+      mileage: '45,000 km',
       fuel: 'Essence',
       transmission: 'CVT',
       engine: '2.5L Boxer',
-      color: 'Vert Forêt',
-      doors: 5,
+      color: 'Blanc',
+      doors: 4,
       seats: 5,
       description: 'Subaru Outback 2023 avec traction intégrale permanente. Parfait pour les terrains difficiles et les conditions hivernales. Idéal pour l\'exportation vers les régions montagneuses ou aux climats rigoureux.',
       specifications: {
@@ -221,14 +221,14 @@ const VehicleDetail = () => {
       model: 'Elantra',
       year: 2022,
       images: [
-        'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=800',
-        'https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=800'
+        '/src/assets/Hyundai1.jpg',
+        '/src/assets/Hyundai2.jpg'
       ],
-      mileage: '28,000 km',
+      mileage: '45,000 km',
       fuel: 'Essence',
       transmission: 'Automatique',
       engine: '2.0L 4-cylindres',
-      color: 'Gris Titanium',
+      color: 'Rouge',
       doors: 4,
       seats: 5,
       description: 'Hyundai Elantra 2022 berline compacte moderne avec design dynamique. Excellente garantie et fiabilité reconnue. Parfaite pour l\'exportation vers les marchés recherchant l\'innovation et la valeur.',
@@ -247,15 +247,15 @@ const VehicleDetail = () => {
       model: 'RX',
       year: 2023,
       images: [
-        'https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=800',
-        'https://images.pexels.com/photos/1719648/pexels-photo-1719648.jpeg?auto=compress&cs=tinysrgb&w=800'
+        '/src/assets/lexus1.jpg',
+        '/src/assets/lexus2.jpg'
       ],
       mileage: '10,000 km',
-      fuel: 'Hybride',
+      fuel: 'Essence',
       transmission: 'Automatique',
-      engine: '3.5L V6 Hybride',
-      color: 'Blanc Nacré',
-      doors: 5,
+      engine: '3.5L V6 ',
+      color: 'Blue',
+      doors: 4,
       seats: 5,
       description: 'Lexus RX 2023 SUV hybride de luxe avec finitions exceptionnelles. Technologie hybride avancée pour une consommation réduite. Parfait pour l\'exportation vers les marchés premium recherchant l\'écologie et le luxe.',
       specifications: {
@@ -269,28 +269,28 @@ const VehicleDetail = () => {
     },
     '11': {
       id: 11,
-      brand: 'Mazda',
-      model: 'CX-5',
-      year: 2022,
+      brand: 'Ford',
+      model: 'Explorer Platinium',
+      year: 2017,
       images: [
-        'https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=800',
-        'https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=800'
+        '/src/assets/ford1.jpg',
+        '/src/assets/ford2.jpg'
       ],
-      mileage: '19,000 km',
+      mileage: '55,000 km',
       fuel: 'Essence',
       transmission: 'Automatique',
-      engine: '2.5L SKYACTIV-G',
-      color: 'Rouge Âme',
-      doors: 5,
+      engine: 'V6 EcoBoost biturbo',
+      color: 'Blanc',
+      doors: 4,
       seats: 5,
-      description: 'Mazda CX-5 2022 SUV compact avec technologie SKYACTIV. Design élégant et conduite dynamique. Moteur économique et fiable. Excellent choix pour l\'exportation vers les marchés appréciant le style japonais.',
+      description: 'le Ford Explorer Platinum, un SUV premium qui allie puissance, confort et élégance pour transformer chaque trajet en expérience unique.',
       specifications: {
-        'Moteur': '2.5L SKYACTIV-G',
-        'Puissance': '187 ch',
-        'Couple': '252 Nm',
-        'Consommation': '8.4L/100km',
-        'Réservoir': '58 litres',
-        'Poids': '1,620 kg'
+        'Moteur': '3.5L V6 EcoBoost biturbo',
+        'Puissance': '365 ch',
+        'Couple': '475 Nm',
+        'Consommation': '12.6L/100km',
+        'Réservoir': '70 litres',
+        'Poids': '1,833 kg'
       }
     }
   };

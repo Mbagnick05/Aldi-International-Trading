@@ -9,23 +9,22 @@ const SupplyDetail = () => {
   const supplyData: { [key: string]: any } = {
     '1': {
       id: 1,
-      name: 'Huile Moteur Synthétique Mobil 1',
+      name: 'Huile Moteur Synthétique',
       category: 'Huiles Moteur Haut de Gamme',
       images: [
-        'https://images.pexels.com/photos/4489702/pexels-photo-4489702.jpeg?auto=compress&cs=tinysrgb&w=800',
-        'https://images.pexels.com/photos/4489701/pexels-photo-4489701.jpeg?auto=compress&cs=tinysrgb&w=800'
+        '/src/assets/huile2.jpg',
+        '/src/assets/huile1.jpg'
       ],
-      brand: 'Mobil 1',
-      description: 'Huile moteur synthétique haute performance Mobil 1, conçue pour les véhicules modernes. Offre une protection exceptionnelle du moteur dans toutes les conditions de conduite. Formule avancée qui maintient la propreté du moteur et prolonge sa durée de vie.',
+     
+      description: 'Huile moteur synthétique haute performance, conçue pour les véhicules modernes. Offre une protection exceptionnelle du moteur dans toutes les conditions de conduite. Formule avancée qui maintient la propreté du moteur et prolonge sa durée de vie.',
       inStock: true,
       specifications: {
-        'Viscosité': '5W-30',
+        'Viscosité': '5W-20  5W-30  5W-40  OW-20',
         'Type': 'Synthétique complète',
         'Volume': '5 litres',
-        'Certification': 'API SN, ILSAC GF-5',
         'Température d\'utilisation': '-40°C à +150°C',
         'Durée de vie': '15,000 km',
-        'Origine': 'États-Unis',
+        'Origine': 'Canada',
         'Conditionnement': 'Bidon plastique'
       },
       features: [
@@ -41,23 +40,22 @@ const SupplyDetail = () => {
     },
     '2': {
       id: 2,
-      name: 'Peinture Professionnelle Sherwin-Williams',
+      name: 'peinture haut de gamme ',
       category: 'Peinture',
       images: [
-        'https://images.pexels.com/photos/1153895/pexels-photo-1153895.jpeg?auto=compress&cs=tinysrgb&w=800',
-        'https://images.pexels.com/photos/1145434/pexels-photo-1145434.jpeg?auto=compress&cs=tinysrgb&w=800'
+        '/src/assets/peinture1.jpg',
+        '/src/assets/peinture2.jpg'
       ],
-      brand: 'Sherwin-Williams',
-      description: 'Peinture acrylique professionnelle Sherwin-Williams de qualité supérieure. Idéale pour tous types de projets : résidentiel, commercial et industriel. Excellente couvrance et durabilité exceptionnelle.',
+      
+      description: 'Boomerang est une peinture acrylique écoresponsable, rapide à sécher, avec une finition veloutée élégante.',
       inStock: true,
       specifications: {
         'Type': 'Acrylique latex',
-        'Finition': 'Satin',
+        'Finition': 'perle',
         'Volume': '3.78 litres',
-        'Couvrance': '35-40 m²',
-        'Temps de séchage': '2-4 heures',
+        'Couvrance': '10 m²/L',
+        'Temps de séchage': '6-9 heures',
         'Dilution': 'À l\'eau',
-        'Origine': 'États-Unis',
         'Garantie': '15 ans'
       },
       features: [
@@ -73,14 +71,13 @@ const SupplyDetail = () => {
     },
     '3': {
       id: 3,
-      name: 'Filtre Automobile K&N Performance',
+      name: 'Filtre Automobile',
       category: 'Filtre',
       images: [
-        'https://images.pexels.com/photos/4489701/pexels-photo-4489701.jpeg?auto=compress&cs=tinysrgb&w=800',
-        'https://images.pexels.com/photos/4489702/pexels-photo-4489702.jpeg?auto=compress&cs=tinysrgb&w=800'
+        '/src/assets/filtre1.jpg',
+        '/src/assets/filtre2.jpg'
       ],
-      brand: 'K&N',
-      description: 'Filtre à air haute performance K&N réutilisable. Améliore les performances du moteur tout en offrant une protection supérieure. Filtre lavable et réutilisable, économique et écologique.',
+      description: 'Filtre à air haute performance réutilisable. Améliore les performances du moteur tout en offrant une protection supérieure. Filtre lavable et réutilisable, économique et écologique.',
       inStock: true,
       specifications: {
         'Type': 'Filtre à air performance',
@@ -89,8 +86,6 @@ const SupplyDetail = () => {
         'Débit d\'air': '+50% vs filtre papier',
         'Durée de vie': '1,600,000 km',
         'Nettoyage': 'Tous les 80,000 km',
-        'Origine': 'États-Unis',
-        'Garantie': 'À vie'
       },
       features: [
         'Réutilisable et lavable',

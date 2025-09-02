@@ -135,7 +135,7 @@ const Contact = () => {
               <div className="mt-8 pt-8 border-t border-gray-200">
                 <div className="text-center">
                   <img 
-                    src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" 
+                    src="/src/assets/Aliou.png" 
                     alt="Propriétaire ALDI International Trading"
                     className="w-20 h-20 rounded-full mx-auto mb-4 object-cover"
                   />

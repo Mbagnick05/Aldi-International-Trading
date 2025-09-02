@@ -18,7 +18,7 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-1 bg-gradient-to-br from-blue-600 to-slate-900 p-8 text-white text-center">
               <img 
-                src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" 
+                src="/src/assets/Aliou.png" 
                 alt="Aliou DIAGNE"
                 className="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-4 border-white shadow-lg"
               />
@@ -59,10 +59,16 @@ const About = () => {
             </div>
             <div className="text-gray-700 leading-relaxed space-y-4">
               <p>
-                Professionnel chevronné, Aliou est <strong>technicien comptable senior</strong>, 
-                fort d'une solide expertise en :
+                Professionnel chevronné, Aliou est à la fois <strong>maître en gestion de projet</strong> et <strong>technicien comptable senior</strong>, 
+                doté d’une expertise solide en :
+
               </p>
               <ul className="space-y-2">
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                  gestion des coûts tout au long du cycle de vie d’un projet (lancement, planification, exécution, suivi et clôture)
+
+                </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
                   Gestion financière

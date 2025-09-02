@@ -10,31 +10,30 @@ const Supplies = () => {
   const supplies = [
     {
       id: 1,
-      name: 'Huile Moteur Haut de Gamme',
+      name: 'Huile Moteur Synthétique',
       category: 'Huiles Moteur Haut de Gamme',
-      price: 45.99,
-      image: 'https://images.pexels.com/photos/4489702/pexels-photo-4489702.jpeg?auto=compress&cs=tinysrgb&w=400',
-      brand: 'Mobil 1',
+      image: '/src/assets/huile3.jpg',
+      brand: '5W-20  5W-30  5W-40  OW-20',
       description: 'Huiles moteur synthétiques de qualité professionnelle pour tous types de véhicules',
       inStock: true
     },
     {
       id: 2,
-      name: 'Peinture Professionnelle',
+      name: 'peinture haut de gamme',
       category: 'Peinture',
       price: 89.99,
-      image: 'https://images.pexels.com/photos/1153895/pexels-photo-1153895.jpeg?auto=compress&cs=tinysrgb&w=400',
-      brand: 'Sherwin-Williams',
+      image: '/src/assets/peinture1.jpg',
+      brand: 'Boomerang',
       description: 'Peinture acrylique professionnelle pour usage résidentiel, commercial et industriel',
       inStock: true
     },
     {
       id: 3,
-      name: 'Filtre Automobile',
+      name: 'Filtre',
       category: 'Filtre',
       price: 24.99,
-      image: 'https://images.pexels.com/photos/4489701/pexels-photo-4489701.jpeg?auto=compress&cs=tinysrgb&w=400',
-      brand: 'K&N',
+      image: '/src/assets/filtre1.jpg',
+      brand: 'Filtre Automobile',
       description: 'Filtres automobiles haute performance pour tous types de véhicules',
       inStock: true
     }
