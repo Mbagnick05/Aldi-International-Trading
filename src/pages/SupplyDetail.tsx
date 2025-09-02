@@ -56,7 +56,6 @@ const SupplyDetail = () => {
         'Couvrance': '10 m²/L',
         'Temps de séchage': '6-9 heures',
         'Dilution': 'À l\'eau',
-        'Garantie': '15 ans'
       },
       features: [
         'Excellente adhérence',
