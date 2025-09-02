@@ -159,21 +159,16 @@ const Supplies = () => {
                   {supply.description}
                 </p>
                 
-                <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-blue-600">
-                    {supply.price.toFixed(2)}$
-                  </span>
-                  <Link 
-                    to={`/supplies/${supply.id}`}
-                    className={`px-4 py-2 rounded-lg font-semibold transition-colors duration-300 ${
-                      supply.inStock 
-                        ? 'bg-blue-600 hover:bg-blue-700 text-white' 
-                        : 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                    }`}
-                  >
-                    Voir détails
-                  </Link>
-                </div>
+                <Link 
+                  to={`/supplies/${supply.id}`}
+                  className={`w-full block text-center px-4 py-2 rounded-lg font-semibold transition-colors duration-300 ${
+                    supply.inStock 
+                      ? 'bg-blue-600 hover:bg-blue-700 text-white' 
+                      : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                  }`}
+                >
+                  Voir détails
+                </Link>
               </div>
             </div>
           ))}

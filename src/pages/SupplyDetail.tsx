@@ -1,47 +1,111 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Package, DollarSign, Mail, Phone, CheckCircle, XCircle } from 'lucide-react';
+import { ArrowLeft, Package, Mail, Phone, CheckCircle, XCircle } from 'lucide-react';
 
 const SupplyDetail = () => {
   const { id } = useParams();
 
-  // Mock data - sera remplacé par les données Laravel
-  const supply = {
-    id: 1,
-    name: 'Huile Moteur Synthétique 5W-30',
-    category: 'Huiles Moteur Haut de Gamme',
-    price: 45.99,
-    images: [
-      'https://images.pexels.com/photos/4489702/pexels-photo-4489702.jpeg?auto=compress&cs=tinysrgb&w=800',
-      'https://images.pexels.com/photos/4489701/pexels-photo-4489701.jpeg?auto=compress&cs=tinysrgb&w=800'
-    ],
-    brand: 'Mobil 1',
-    description: 'Huile moteur synthétique haute performance conçue pour les véhicules modernes. Offre une protection exceptionnelle du moteur dans toutes les conditions de conduite.',
-    inStock: true,
-    specifications: {
-      'Viscosité': '5W-30',
-      'Type': 'Synthétique complète',
-      'Volume': '5 litres',
-      'Certification': 'API SN, ILSAC GF-5',
-      'Température d\'utilisation': '-40°C à +150°C',
-      'Durée de vie': '15,000 km'
+  // Données spécifiques pour chaque produit avec deux images
+  const supplyData: { [key: string]: any } = {
+    '1': {
+      id: 1,
+      name: 'Huile Moteur Synthétique Mobil 1',
+      category: 'Huiles Moteur Haut de Gamme',
+      images: [
+        'https://images.pexels.com/photos/4489702/pexels-photo-4489702.jpeg?auto=compress&cs=tinysrgb&w=800',
+        'https://images.pexels.com/photos/4489701/pexels-photo-4489701.jpeg?auto=compress&cs=tinysrgb&w=800'
+      ],
+      brand: 'Mobil 1',
+      description: 'Huile moteur synthétique haute performance Mobil 1, conçue pour les véhicules modernes. Offre une protection exceptionnelle du moteur dans toutes les conditions de conduite. Formule avancée qui maintient la propreté du moteur et prolonge sa durée de vie.',
+      inStock: true,
+      specifications: {
+        'Viscosité': '5W-30',
+        'Type': 'Synthétique complète',
+        'Volume': '5 litres',
+        'Certification': 'API SN, ILSAC GF-5',
+        'Température d\'utilisation': '-40°C à +150°C',
+        'Durée de vie': '15,000 km',
+        'Origine': 'États-Unis',
+        'Conditionnement': 'Bidon plastique'
+      },
+      features: [
+        'Protection avancée contre l\'usure',
+        'Excellente fluidité à froid',
+        'Résistance à l\'oxydation',
+        'Économie de carburant',
+        'Compatible avec tous moteurs essence',
+        'Formule longue durée',
+        'Réduit les dépôts moteur',
+        'Améliore les performances'
+      ]
     },
-    features: [
-      'Protection avancée contre l\'usure',
-      'Excellente fluidité à froid',
-      'Résistance à l\'oxydation',
-      'Économie de carburant',
-      'Compatible avec tous moteurs essence',
-      'Formule longue durée'
-    ],
-    applications: [
-      'Véhicules de tourisme',
-      'SUV et crossovers',
-      'Véhicules commerciaux légers',
-      'Moteurs turbocompressés'
-    ]
+    '2': {
+      id: 2,
+      name: 'Peinture Professionnelle Sherwin-Williams',
+      category: 'Peinture',
+      images: [
+        'https://images.pexels.com/photos/1153895/pexels-photo-1153895.jpeg?auto=compress&cs=tinysrgb&w=800',
+        'https://images.pexels.com/photos/1145434/pexels-photo-1145434.jpeg?auto=compress&cs=tinysrgb&w=800'
+      ],
+      brand: 'Sherwin-Williams',
+      description: 'Peinture acrylique professionnelle Sherwin-Williams de qualité supérieure. Idéale pour tous types de projets : résidentiel, commercial et industriel. Excellente couvrance et durabilité exceptionnelle.',
+      inStock: true,
+      specifications: {
+        'Type': 'Acrylique latex',
+        'Finition': 'Satin',
+        'Volume': '3.78 litres',
+        'Couvrance': '35-40 m²',
+        'Temps de séchage': '2-4 heures',
+        'Dilution': 'À l\'eau',
+        'Origine': 'États-Unis',
+        'Garantie': '15 ans'
+      },
+      features: [
+        'Excellente adhérence',
+        'Résistant aux intempéries',
+        'Facile à nettoyer',
+        'Faible odeur',
+        'Séchage rapide',
+        'Résistant aux UV',
+        'Application facile',
+        'Longue durabilité'
+      ]
+    },
+    '3': {
+      id: 3,
+      name: 'Filtre Automobile K&N Performance',
+      category: 'Filtre',
+      images: [
+        'https://images.pexels.com/photos/4489701/pexels-photo-4489701.jpeg?auto=compress&cs=tinysrgb&w=800',
+        'https://images.pexels.com/photos/4489702/pexels-photo-4489702.jpeg?auto=compress&cs=tinysrgb&w=800'
+      ],
+      brand: 'K&N',
+      description: 'Filtre à air haute performance K&N réutilisable. Améliore les performances du moteur tout en offrant une protection supérieure. Filtre lavable et réutilisable, économique et écologique.',
+      inStock: true,
+      specifications: {
+        'Type': 'Filtre à air performance',
+        'Matériau': 'Coton huilé',
+        'Efficacité': '99%',
+        'Débit d\'air': '+50% vs filtre papier',
+        'Durée de vie': '1,600,000 km',
+        'Nettoyage': 'Tous les 80,000 km',
+        'Origine': 'États-Unis',
+        'Garantie': 'À vie'
+      },
+      features: [
+        'Réutilisable et lavable',
+        'Améliore les performances',
+        'Augmente la puissance',
+        'Réduit la consommation',
+        'Protection supérieure',
+        'Installation facile',
+        'Économique à long terme',
+        'Respectueux de l\'environnement'
+      ]
+    }
   };
 
+  const supply = supplyData[id || '1'] || supplyData['1'];
   const [selectedImage, setSelectedImage] = useState(0);
 
   return (
@@ -66,21 +130,19 @@ const SupplyDetail = () => {
                 className="w-full h-96 object-cover rounded-lg shadow-lg"
               />
             </div>
-            {supply.images.length > 1 && (
-              <div className="grid grid-cols-2 gap-2">
-                {supply.images.map((image, index) => (
-                  <img
-                    key={index}
-                    src={image}
-                    alt={`${supply.name} ${index + 1}`}
-                    className={`w-full h-24 object-cover rounded cursor-pointer transition-all duration-300 ${
-                      selectedImage === index ? 'ring-2 ring-blue-500' : 'hover:opacity-75'
-                    }`}
-                    onClick={() => setSelectedImage(index)}
-                  />
-                ))}
-              </div>
-            )}
+            <div className="grid grid-cols-2 gap-2">
+              {supply.images.map((image: string, index: number) => (
+                <img
+                  key={index}
+                  src={image}
+                  alt={`${supply.name} ${index + 1}`}
+                  className={`w-full h-24 object-cover rounded cursor-pointer transition-all duration-300 ${
+                    selectedImage === index ? 'ring-2 ring-blue-500' : 'hover:opacity-75'
+                  }`}
+                  onClick={() => setSelectedImage(index)}
+                />
+              ))}
+            </div>
           </div>
 
           {/* Details */}
@@ -110,16 +172,6 @@ const SupplyDetail = () => {
               )}
             </div>
 
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
-              <div className="flex items-center justify-center">
-                <DollarSign className="w-8 h-8 text-blue-600 mr-2" />
-                <span className="text-4xl font-bold text-blue-600">
-                  {supply.price.toFixed(2)}$
-                </span>
-              </div>
-              <p className="text-center text-gray-600 mt-2">Prix unitaire</p>
-            </div>
-
             {/* Description */}
             <div className="bg-white rounded-lg shadow-md p-6 mb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Description</h3>
@@ -143,23 +195,10 @@ const SupplyDetail = () => {
             <div className="bg-white rounded-lg shadow-md p-6 mb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Caractéristiques</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                {supply.features.map((feature, index) => (
+                {supply.features.map((feature: string, index: number) => (
                   <div key={index} className="flex items-center">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
                     <span className="text-gray-700">{feature}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Applications */}
-            <div className="bg-white rounded-lg shadow-md p-6 mb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Applications</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                {supply.applications.map((application, index) => (
-                  <div key={index} className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-3" />
-                    <span className="text-gray-700">{application}</span>
                   </div>
                 ))}
               </div>

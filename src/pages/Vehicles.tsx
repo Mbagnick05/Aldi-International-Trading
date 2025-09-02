@@ -220,10 +220,6 @@ const Vehicles = () => {
                   <Calendar className="w-4 h-4 mr-2" />
                   <span>{vehicle.year}</span>
                 </div>
-                <div className="flex items-center text-gray-600 mb-4">
-                  <DollarSign className="w-4 h-4 mr-2" />
-                  <span className="text-2xl font-bold text-blue-600">{vehicle.price.toLocaleString()}$</span>
-                </div>
                 <div className="grid grid-cols-2 gap-2 text-sm text-gray-600 mb-4">
                   <div>Kilométrage: {vehicle.mileage}</div>
                   <div>Carburant: {vehicle.fuel}</div>
