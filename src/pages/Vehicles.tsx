@@ -6,7 +6,6 @@ const Vehicles = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedBrand, setSelectedBrand] = useState('');
   const [selectedYear, setSelectedYear] = useState('');
-  const [priceRange, setPriceRange] = useState('');
 
   // Mock data - sera remplacé par les données Laravel
   const vehicles = [
@@ -139,12 +138,8 @@ const Vehicles = () => {
     const matchesSearch = vehicle.brand.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          vehicle.model.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesBrand = !selectedBrand || vehicle.brand === selectedBrand;
-    const matchesPrice = !priceRange || 
-      (priceRange === 'low' && vehicle.price < 30000) ||
-      (priceRange === 'medium' && vehicle.price >= 30000 && vehicle.price < 50000) ||
-      (priceRange === 'high' && vehicle.price >= 50000);
 
-    return matchesSearch && matchesBrand && matchesPrice;
+    return matchesSearch && matchesBrand;
   });
 
   return (
@@ -160,7 +155,7 @@ const Vehicles = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Filters */}
         <div className="bg-white rounded-lg shadow-md p-6 mb-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
               <input
@@ -181,16 +176,6 @@ const Vehicles = () => {
               {brands.map(brand => (
                 <option key={brand} value={brand}>{brand}</option>
               ))}
-            </select>
-
-            <select
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              value={priceRange}
-              onChange={(e) => setPriceRange(e.target.value)}
-            >
-              <option value="low">Moins de 30,000$</option>
-              <option value="medium">30,000$ - 50,000$</option>
-              <option value="high">Plus de 50,000$</option>
             </select>
           </div>
         </div>
