@@ -12,7 +12,7 @@ const Supplies = () => {
       id: 1,
       name: 'Huile Moteur Synthétique',
       category: 'Huiles Moteur Haut de Gamme',
-      image: '/src/assets/huile3.jpg',
+      image: '/huile3.jpg',
       brand: '5W-20  5W-30  5W-40  OW-20',
       description: 'Huiles moteur synthétiques de qualité professionnelle pour tous types de véhicules',
       inStock: true
@@ -22,7 +22,7 @@ const Supplies = () => {
       name: 'peinture haut de gamme',
       category: 'Peinture',
       price: 89.99,
-      image: '/src/assets/peinture1.jpg',
+      image: '/peinture1.jpg',
       brand: 'Boomerang',
       description: 'Peinture acrylique professionnelle pour usage résidentiel, commercial et industriel',
       inStock: true
@@ -32,7 +32,7 @@ const Supplies = () => {
       name: 'Filtre',
       category: 'Filtre',
       price: 24.99,
-      image: '/src/assets/filtre1.jpg',
+      image: '/filtre1.jpg',
       brand: 'Filtre Automobile',
       description: 'Filtres automobiles haute performance pour tous types de véhicules',
       inStock: true

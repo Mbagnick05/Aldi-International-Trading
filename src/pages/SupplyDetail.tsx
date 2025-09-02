@@ -12,8 +12,8 @@ const SupplyDetail = () => {
       name: 'Huile Moteur Synthétique',
       category: 'Huiles Moteur Haut de Gamme',
       images: [
-        '/src/assets/huile2.jpg',
-        '/src/assets/huile1.jpg'
+        '/huile2.jpg',
+        '/huile1.jpg'
       ],
      
       description: 'Huile moteur synthétique haute performance, conçue pour les véhicules modernes. Offre une protection exceptionnelle du moteur dans toutes les conditions de conduite. Formule avancée qui maintient la propreté du moteur et prolonge sa durée de vie.',
@@ -43,8 +43,8 @@ const SupplyDetail = () => {
       name: 'peinture haut de gamme ',
       category: 'Peinture',
       images: [
-        '/src/assets/peinture1.jpg',
-        '/src/assets/peinture2.jpg'
+        '/peinture1.jpg',
+        '/peinture2.jpg'
       ],
       
       description: 'Boomerang est une peinture acrylique écoresponsable, rapide à sécher, avec une finition veloutée élégante.',
@@ -74,8 +74,8 @@ const SupplyDetail = () => {
       name: 'Filtre Automobile',
       category: 'Filtre',
       images: [
-        '/src/assets/filtre1.jpg',
-        '/src/assets/filtre2.jpg'
+        '/filtre1.jpg',
+        '/filtre2.jpg'
       ],
       description: 'Filtre à air haute performance réutilisable. Améliore les performances du moteur tout en offrant une protection supérieure. Filtre lavable et réutilisable, économique et écologique.',
       inStock: true,

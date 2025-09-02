@@ -13,8 +13,8 @@ const VehicleDetail = () => {
       model: 'Camry',
       year: 2023,
       images: [
-        '/src/assets/toyota1.jpg',
-        '/src/assets/toyota2.jpg'
+        '/toyota1.jpg',
+        '/toyota2.jpg'
       ],
       mileage: '10,000 km',
       fuel: 'Essence',
@@ -39,8 +39,8 @@ const VehicleDetail = () => {
       model: 'CX5',
       year: 2020,
       images: [
-        '/src/assets/madza1.jpg',
-        '/src/assets/madza2.jpg'
+        '/madza1.jpg',
+        '/madza2.jpg'
       ],
       mileage: '15,000 km',
       fuel: 'Essence',
@@ -65,8 +65,8 @@ const VehicleDetail = () => {
       model: 'Cherokee Sport',
       year: 2019,
       images: [
-        '/src/assets/jeep1.jpg',
-        '/src/assets/jeep2.jpg'
+        '/jeep1.jpg',
+        '/jeep2.jpg'
       ],
       mileage: '35,000 km',
       fuel: 'Essence',
@@ -91,8 +91,8 @@ const VehicleDetail = () => {
       model: 'C-Class',
       year: 2022,
       images: [
-        '/src/assets/mercedes1.jpg',
-        '/src/assets/mercedes2.jpg'
+        '/mercedes1.jpg',
+        '/mercedes2.jpg'
       ],
       mileage: '20,000 km',
       fuel: 'Essence',
@@ -117,8 +117,8 @@ const VehicleDetail = () => {
       model: 'A4',
       year: 2023,
       images: [
-        '/src/assets/audi1.jpg',
-        '/src/assets/audi2.jpg'
+        '/audi1.jpg',
+        '/audi2.jpg'
       ],
       mileage: '5,000 km',
       fuel: 'Essence',
@@ -143,8 +143,8 @@ const VehicleDetail = () => {
       model: 'Sportage',
       year: 2022,
       images: [
-        '/src/assets/kia1.jpg',
-        '/src/assets/kia2.jpg'
+        '/kia1.jpg',
+        '/kia2.jpg'
       ],
       mileage: '25,000 km',
       fuel: 'Essence',
@@ -169,8 +169,8 @@ const VehicleDetail = () => {
       model: 'Altima',
       year: 2023,
       images: [
-        '/src/assets/nissan2.jpg',
-        '/src/assets/nissan1.jpg'
+        '/nissan2.jpg',
+        '/nissan1.jpg'
       ],
       mileage: '30,000 km',
       fuel: 'Essence',
@@ -195,8 +195,8 @@ const VehicleDetail = () => {
       model: 'Outback',
       year: 2023,
       images: [
-        '/src/assets/subaru1.jpg',
-        '/src/assets/subaru2.jpg'
+        '/subaru1.jpg',
+        '/subaru2.jpg'
       ],
       mileage: '45,000 km',
       fuel: 'Essence',
@@ -221,8 +221,8 @@ const VehicleDetail = () => {
       model: 'Elantra',
       year: 2022,
       images: [
-        '/src/assets/Hyundai1.jpg',
-        '/src/assets/Hyundai2.jpg'
+        '/Hyundai1.jpg',
+        '/Hyundai2.jpg'
       ],
       mileage: '45,000 km',
       fuel: 'Essence',
@@ -247,8 +247,8 @@ const VehicleDetail = () => {
       model: 'RX',
       year: 2023,
       images: [
-        '/src/assets/lexus1.jpg',
-        '/src/assets/lexus2.jpg'
+        '/lexus1.jpg',
+        '/lexus2.jpg'
       ],
       mileage: '10,000 km',
       fuel: 'Essence',
@@ -273,8 +273,8 @@ const VehicleDetail = () => {
       model: 'Explorer Platinium',
       year: 2017,
       images: [
-        '/src/assets/ford1.jpg',
-        '/src/assets/ford2.jpg'
+        '/ford1.jpg',
+        '/ford2.jpg'
       ],
       mileage: '55,000 km',
       fuel: 'Essence',

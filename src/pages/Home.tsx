@@ -11,7 +11,7 @@ const Home = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url(/src/assets/accueil.jpg)"
+            backgroundImage: "url(/accueil.jpg)"
           }}
         ></div>
         
@@ -75,7 +75,7 @@ const Home = () => {
             </div>
             <div>
               <img 
-                src="/src/assets/aldi.jpg" 
+                src="/aldi.jpg" 
                 alt="ALDI International Trading" 
                 className="rounded-lg shadow-xl w-full h-96 object-cover"
               />

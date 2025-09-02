@@ -15,7 +15,7 @@ const Vehicles = () => {
       model: 'Camry',
       year: 2023,
       price: 28500,
-      image: 'src/assets/toyota1.jpg',
+      image: '/toyota1.jpg',
       mileage: '10,000 km',
       fuel: 'Essence',
       transmission: 'Automatique'
@@ -25,7 +25,7 @@ const Vehicles = () => {
       brand: 'Madza',
       model: 'CX5',
       year: 2020,
-      image: '/src/assets/madza1.jpg',
+      image: '/madza1.jpg',
       mileage: '15,000 km',
       fuel: 'Essence',
       transmission: 'Manuelle'
@@ -36,7 +36,7 @@ const Vehicles = () => {
       model: 'Cherokee Sport',
       year: 2019,
       price: 65000,
-      image: '/src/assets/jeep1.jpg',
+      image: '/jeep1.jpg',
       mileage: '35,000 km',
       fuel: 'Essence',
       transmission: 'Automatique'
@@ -47,7 +47,7 @@ const Vehicles = () => {
       model: 'C-Class',
       year: 2022,
       price: 45000,
-      image: '/src/assets/mercedes1.jpg',
+      image: '/mercedes1.jpg',
       mileage: '20,000 km',
       fuel: 'Essence',
       transmission: 'Automatique'
@@ -58,7 +58,7 @@ const Vehicles = () => {
       model: 'A4',
       year: 2023,
       price: 42000,
-      image: '/src/assets/audi1.jpg',
+      image: '/audi1.jpg',
       mileage: '5,000 km',
       fuel: 'Essence',
       transmission: 'Automatique'
@@ -69,7 +69,7 @@ const Vehicles = () => {
       model: 'Sportage',
       year: 2022,
       price: 32000,
-      image: '/src/assets/kia1.jpg',
+      image: '/kia1.jpg',
       mileage: '25,000 km',
       fuel: 'Essence',
       transmission: 'Automatique'
@@ -80,7 +80,7 @@ const Vehicles = () => {
       model: 'Altima',
       year: 2023,
       price: 26500,
-      image: '/src/assets/nissan2.jpg',
+      image: '/nissan2.jpg',
       mileage: '30,000 km',
       fuel: 'Essence',
       transmission: 'CVT'
@@ -91,7 +91,7 @@ const Vehicles = () => {
       model: 'Outback',
       year: 2023,
       price: 35000,
-      image: '/src/assets/subaru1.jpg',
+      image: '/subaru1.jpg',
       mileage: '45,000 km',
       fuel: 'Essence',
       transmission: 'CVT'
@@ -102,7 +102,7 @@ const Vehicles = () => {
       model: 'Elantra',
       year: 2022,
       price: 23500,
-      image: '/src/assets/Hyundai1.jpg',
+      image: '/Hyundai1.jpg',
       mileage: '45,000 km',
       fuel: 'Essence',
       transmission: 'Automatique'
@@ -113,7 +113,7 @@ const Vehicles = () => {
       model: 'RX',
       year: 2023,
       price: 58000,
-      image: '/src/assets/lexus1.jpg',
+      image: '/lexus1.jpg',
       mileage: '10,000 km',
       fuel: 'Essence',
       transmission: 'Automatique'
@@ -123,7 +123,7 @@ const Vehicles = () => {
       brand: 'Ford',
       model: 'Explorer Platinium',
       year: 2017,
-      image: '/src/assets/ford1.jpg',
+      image: '/ford1.jpg',
       mileage: '55,000 km',
       fuel: 'Essence',
       transmission: 'Automatique'
