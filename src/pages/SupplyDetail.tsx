@@ -54,7 +54,7 @@ const SupplyDetail = () => {
         'Finition': 'perle',
         'Volume': '3.78 litres',
         'Couvrance': '10 m²/L',
-        'Temps de séchage': '6-9 heures',
+        'Temps de séchage': '30-60 minutes',
         'Dilution': 'À l\'eau',
       },
       features: [
