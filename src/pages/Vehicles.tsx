@@ -188,7 +188,6 @@ const Vehicles = () => {
               value={priceRange}
               onChange={(e) => setPriceRange(e.target.value)}
             >
-              <option value="">Tous les prix</option>
               <option value="low">Moins de 30,000$</option>
               <option value="medium">30,000$ - 50,000$</option>
               <option value="high">Plus de 50,000$</option>
