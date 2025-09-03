@@ -13,49 +13,50 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Construire l'URL Gmail avec formatage optimisé
-    const emailTo = 'diagnealiou787@gmail.com';
+    // Construire le message WhatsApp
+    const phoneNumber = '15817775787'; // +1 581-777-5787
     
-    // Créer le sujet en français basé sur la sélection
-    let subjectText = '';
+    // Créer le type de demande en français basé sur la sélection
+    let typeDemandeText = '';
     switch(formData.subject) {
       case 'vehicle-export':
-        subjectText = 'Demande d\'exportation de véhicules';
+        typeDemandeText = 'Demande d\'exportation de véhicules';
         break;
       case 'paint-supplies':
-        subjectText = 'Demande de fournitures de peinture';
+        typeDemandeText = 'Demande de fournitures de peinture';
         break;
       case 'quote':
-        subjectText = 'Demande de devis';
+        typeDemandeText = 'Demande de devis';
         break;
       case 'other':
-        subjectText = 'Autre demande';
+        typeDemandeText = 'Autre demande';
         break;
       default:
-        subjectText = 'Contact depuis le site ALDI International Trading';
+        typeDemandeText = 'Contact depuis le site ALDI International Trading';
     }
     
-    const subject = encodeURIComponent(subjectText);
-    const body = encodeURIComponent(
-      `Bonjour,\n\n` +
-      `Voici les détails de ma demande :\n\n` +
-      `• Nom complet : ${formData.name}\n` +
-      `• Email : ${formData.email}\n` +
-      `• Téléphone : ${formData.phone || 'Non renseigné'}\n` +
-      `• Type de demande : ${subjectText}\n\n` +
-      `Message :\n${formData.message}\n\n` +
-      `Cordialement,\n${formData.name}`
+    // Construire le message WhatsApp
+    const message = encodeURIComponent(
+      `🔹 *ALDI International Trading* 🔹\n\n` +
+      `Bonjour ! Voici les détails de ma demande :\n\n` +
+      `👤 *Nom :* ${formData.name}\n` +
+      `📧 *Email :* ${formData.email}\n` +
+      `📞 *Téléphone :* ${formData.phone || 'Non renseigné'}\n` +
+      `📋 *Type de demande :* ${typeDemandeText}\n\n` +
+      `💬 *Message :*\n${formData.message}\n\n` +
+      `Merci pour votre attention !\n` +
+      `Cordialement, ${formData.name}`
     );
     
-    // Ouvrir Gmail avec le message pré-rempli
-    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailTo}&su=${subject}&body=${body}`;
-    window.open(gmailUrl, '_blank');
+    // Ouvrir WhatsApp avec le message pré-rempli
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(whatsappUrl, '_blank');
     
-    // Réinitialiser le formulaire après redirection
+    // Réinitialiser le formulaire après envoi
     setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
     
     // Message de confirmation
-    alert('Redirection vers Gmail en cours... Votre message est prêt à être envoyé !');
+    alert('Redirection vers WhatsApp en cours... Votre message est prêt à être envoyé !');
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -256,7 +257,7 @@ const Contact = () => {
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold transition-colors duration-300 flex items-center justify-center"
                 >
                   <Send className="w-5 h-5 mr-2" />
-                  Envoyer le message
+                  Envoyer via WhatsApp
                 </button>
               </form>
             </div>
