@@ -156,7 +156,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-/*
+
       {/* Stats Section 
       <section className="py-20 bg-slate-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
