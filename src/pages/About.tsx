@@ -18,7 +18,7 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-1 bg-gradient-to-br from-blue-600 to-slate-900 p-8 text-white text-center">
               <img 
-                src="/Aliou.png" 
+                src="/Aliou.jpg" 
                 alt="Aliou DIAGNE"
                 className="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-4 border-white shadow-lg"
               />
