@@ -10,13 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "fs": "^0.0.1-security",
     "lucide-react": "^0.344.0",
+    "path": "^0.12.7",
+    "path-browserify": "^1.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.8.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
+    "@types/node": "^24.3.1",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
