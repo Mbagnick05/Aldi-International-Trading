@@ -75,7 +75,7 @@ const Home = () => {
             </div>
             <div>
               <img 
-                src="/aldi.jpg" 
+                src="/grandAliou.jpg" 
                 alt="ALDI International Trading" 
                 className="rounded-lg shadow-xl w-full h-96 object-cover"
               />
