@@ -76,7 +76,7 @@ const Vehicles = () => {
     },
     {
       id: 7,
-      brand: 'NISSAN',
+      brand: 'NISSAN' ,
       model: 'Altima',
       year: 2023,
       price: 26500,
@@ -127,7 +127,27 @@ const Vehicles = () => {
       mileage: '55,000 km',
       fuel: 'Essence',
       transmission: 'Automatique'
-    }
+    },
+    {
+      id: 12,
+      brand: 'Mitsubishi ',
+      model: 'RVR',
+      year: 2019,
+      image: '/Mitsubishi1.jpg',
+      mileage: '188,000 km',
+      fuel: 'Essence',
+      transmission: 'CVT'
+    },
+      {
+      id: 13,
+      brand: 'NISSAN' ,
+      model: 'Murano ',
+      year: 2017,
+      image: '/NissanM1.jpg',
+      mileage: '98,000 km',
+      fuel: 'Essence',
+      transmission: 'CVT'
+    },
   ];
 
   const brands = [...new Set(vehicles.map(v => v.brand))];

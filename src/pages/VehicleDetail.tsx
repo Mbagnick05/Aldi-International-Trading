@@ -292,7 +292,59 @@ const VehicleDetail = () => {
         'Réservoir': '70 litres',
         'Poids': '1,833 kg'
       }
-    }
+    },
+        '12': {
+      id: 12,
+      brand: 'Mitsubishi ',
+      model: 'RVR',
+      year: 2019,
+      images: [
+        '/Mitsubishi1.jpg',
+        '/Mitsubishi2.jpg'
+      ],
+      mileage: '188,000 km',
+      fuel: 'Essence',
+      transmission: 'CVT',
+      engine: '2.4L  ',
+      color: 'Gris',
+      doors: 4,
+      seats: 5,
+      description: 'Le Mitsubishi RVR 2019 est un VUS compact proposé avec des moteurs 4 cylindres de 2,0 L (148 ch) et 2,4 L (168 ch), couplés à une transmission CVT, et disponible en traction avant ou intégrale.',
+      specifications: {
+        'Moteur': '2.4L ',
+        'Puissance': '168 ch',
+        'Couple': '145 lb-pi',
+        'Consommation': '8.2L/100km',
+        'Réservoir': '56 litres',
+        'Poids': '1,895 kg'
+      }
+    },
+        '13': {
+      id: 13,
+      brand: 'NISSAN',
+      model: 'Murano ',
+      year: 2017,
+      images: [
+        '/NissanM1.jpg',
+        '/NissanM2.jpg'
+      ],
+      mileage: '98,000 km',
+      fuel: 'Essence',
+      transmission: 'CVT',
+      engine: '3.5L',
+      color: 'Gris',
+      doors: 4,
+      seats: 5,
+      description: 'Nissan Altima 2023 berline familiale spacieuse et confortable. Transmission CVT pour une conduite douce et économique. Parfaite pour l\'exportation vers les marchés familiaux.',
+      specifications: {
+        'Moteur': '3.5L',
+        'Puissance': '260 ch',
+        'Couple': '325 Nm',
+        'Consommation': '8.3L/100km',
+        'Réservoir': '72 litres',
+        'Poids': '1,721 kg'
+      }
+    },
   };
 
   const vehicle = vehicleData[id || '1'] || vehicleData['1'];
