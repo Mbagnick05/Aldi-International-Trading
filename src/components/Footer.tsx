@@ -25,24 +25,28 @@ const Footer = () => {
               >
                 <MessageCircle className="w-6 h-6" />
               </a>
-              <a 
-                href="#" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-blue-400 transition-colors p-2 rounded-full hover:bg-blue-400/10"
-                title="Facebook"
-              >
-                <Facebook className="w-6 h-6" />
-              </a>
-              <a 
-                href="#" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-blue-500 transition-colors p-2 rounded-full hover:bg-blue-500/10"
-                title="LinkedIn"
-              >
-                <Linkedin className="w-6 h-6" />
-              </a>
+              {/* 
+<a 
+  href="#" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="text-gray-300 hover:text-blue-400 transition-colors p-2 rounded-full hover:bg-blue-400/10"
+  title="Facebook"
+>
+  <Facebook className="w-6 h-6" />
+</a>
+
+<a 
+  href="#" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="text-gray-300 hover:text-blue-500 transition-colors p-2 rounded-full hover:bg-blue-500/10"
+  title="LinkedIn"
+>
+  <Linkedin className="w-6 h-6" />
+</a>
+*/}
+
             </div>
           </div>
 

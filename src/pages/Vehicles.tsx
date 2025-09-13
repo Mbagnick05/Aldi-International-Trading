@@ -9,6 +9,39 @@ const Vehicles = () => {
 
   // Mock data - sera remplacé par les données Laravel
   const vehicles = [
+     {
+      id: 16,
+      brand: 'Kia',
+      model: 'Sorento S',
+      year: 2020,
+      image: '/kia3.jpg',
+      mileage: '175,000 km',
+      fuel: 'Essence',
+      transmission: 'Automatique'
+    },
+
+    {
+      id: 15,
+      brand: 'Chevrolet',
+      model: 'Malibu',
+      year: 2017,
+      image: '/chev1.jpg',
+      mileage: '90,000 km',
+      fuel: 'Essence',
+      transmission: 'Automatique'
+    },
+
+    {
+      id: 14,
+      brand: 'BMW  ',
+      model: 'x1',
+      year: 2017,
+      image: '/bmw1.jpg',
+      mileage: '190,000 km',
+      fuel: 'Essence',
+      transmission: 'Automatique'
+    },
+
     {
       id: 12,
       brand: 'Mitsubishi ',
@@ -28,7 +61,7 @@ const Vehicles = () => {
       image: '/NissanM1.jpg',
       mileage: '98,000 km',
       fuel: 'Essence',
-      transmission: 'CVT'
+      transmission: 'Automatique'
     },
     {
       id: 1,

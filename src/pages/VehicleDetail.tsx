@@ -345,6 +345,84 @@ const VehicleDetail = () => {
         'Poids': '1,721 kg'
       }
     },
+     '14': {
+      id: 13,
+      brand: 'BMW',
+      model: 'x1',
+      year: 2017,
+      images: [
+        '/bmw1.jpg',
+        '/bmw2.jpg'
+      ],
+      mileage: '190,000 km',
+      fuel: 'Essence',
+      transmission: 'Automatique',
+      engine: '3.5L',
+      color: 'Gris',
+      doors: 4,
+      seats: 5,
+      description: 'La BMW X1 2017 est un VUS compact reconnu pour son design réussi, son habitacle spacieux et polyvalent, sa qualité de finition soignée et sa suspension confortable.',
+      specifications: {
+        'Moteur': '2.0L',
+        'Puissance': '228 ch',
+        'Couple': '350 Nm',
+        'Consommation': '7.4L/100km',
+        'Réservoir': '51 litres',
+        'Poids': '1,700 kg'
+      }
+    },
+         '15': {
+      id: 13,
+      brand: 'Chevrolet',
+      model: 'Malibu',
+      year: 2017,
+      images: [
+        '/chev1.jpg',
+        '/chev2.jpg'
+      ],
+      mileage: '90,000 km',
+      fuel: 'Essence',
+      transmission: 'Automatique',
+      engine: '2.0L',
+      color: 'Blanc',
+      doors: 4,
+      seats: 5,
+      description: 'La Chevrolet Malibu 2017 offre un bon équilibre entre style, confort et technologies de sécurité avancées, avec une tenue de route améliorée et un intérieur moderne.',
+      specifications: {
+        'Moteur': '2.0L',
+        'Puissance': '250 ch',
+        'Couple': '250 Nm',
+        'Consommation': '7.8L/100km',
+        'Réservoir': '49 litres',
+        'Poids': '1,496 kg'
+      }
+    },
+             '16': {
+      id: 13,
+      brand: 'Kia',
+      model: 'Sorento S',
+      year: 2020,
+      images: [
+        '/kia3.jpg',
+        '/kia4.jpg'
+      ],
+      mileage: '175,000 km',
+      fuel: 'Essence',
+      transmission: 'Automatique',
+      engine: '2.4L',
+      color: 'Noire',
+      doors: 4,
+      seats: 7,
+      description: 'Le Kia Sorento 2020 offre une qualité globale positive, caractérisée par un habitacle spacieux et confortable.',
+      specifications: {
+        'Moteur': '2.4L',
+        'Puissance': '290 ch',
+        'Couple': '342 Nm',
+        'Consommation': '8.2L/100km',
+        'Réservoir': '71 litres',
+        'Poids': '1,860 kg'
+      }
+    },
   };
 
   const vehicle = vehicleData[id || '1'] || vehicleData['1'];
